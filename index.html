@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Zhu Liu</title>
-    <link href='https://fonts.googleapis.com/css?family=Pinyon Script' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <meta name="description" content="Zhu Liu - Ph.D. researcher in bi-level optimization, computer vision, and multi-spectral image processing.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Libre+Franklin:wght@500;600;700&amp;display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="images/favicon.png">
     <!--Use downloaded bootstrap 5.1.3 -->
     <!-- <link href="bootstrap.min.css" rel="stylesheet"> -->
@@ -15,8 +17,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet"> -->
 
@@ -32,35 +32,28 @@
 </head>
 
 <body>
-    <div class="header">
-        <!-- <a href="#">Chen Wang</a> -->
-        <div class="ftheader">
-            <a href="#home">Zhu Liu</a>
-        </div>
-        <!-- ??? why the order is reversed -->
-        <div class="ftsubheader">
-            <a href="">Posts</a>
-        </div>
-        <div class="ftsubheader">
-            <a href="#awards">Awards</a>
-        </div>
-        <div class="ftsubheader">
-            <a href="#services">Services</a>
-        </div>
-        <div class="ftsubheader">
-            <a href="#publications">Publications</a>
-        </div>
-        <div class="ftsubheader">
-            <a href="#home">Home</a>
-        </div>
-    </div>
+    <header class="header site-header">
+        <nav class="site-nav" aria-label="Primary navigation">
+            <a class="brand" href="#home" aria-label="Zhu Liu home">
+                <span class="brand-mark">ZL</span>
+                <span>Zhu Liu</span>
+            </a>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#publications">Publications</a>
+                <a href="#services">Services</a>
+                <a href="#awards">Awards</a>
+                <a href="posts.html">Posts</a>
+            </div>
+        </nav>
+    </header>
 
     <div class="container" id="home">
         <div class="row justify-content-center intro">
-            <div class="links1 col-9">
-                <h1 class="text-center">Zhu Liu&nbsp&nbsp<span style="font-family: STXingkai;">刘铸</span>
-                </h1>
-                <p>I am Zhu Liu, a third-year Ph.D. student in the School of Software at Dalian University of Technology (DLUT),
+            <div class="links1 col-lg-9 intro-copy">
+                <p class="eyebrow">Computer Vision · Bi-level Optimization</p>
+                <h1>Zhu Liu <span class="chinese-name" style="font-family: STXingkai;">刘铸</span></h1>
+                <p class="intro-lead">I am Zhu Liu, a fourth-year Ph.D. student in the School of Software at Dalian University of Technology (DLUT),
                     specializing in Software Engineering under the supervision of Professor Risheng Liu.
                     My research focuses on bi-level optimization, multi-spectral image processing and fusion.
                      </p>
@@ -73,34 +66,42 @@
                 <p>Before that, I received the B.E. and M.S.E degrees in software engineering at DLUT, China, in 2019 and 2022.
                 </p>
 
-                <div class="links text-center">
+                <div class="links profile-links">
                     <a href="mailto:liuzhucv@gmail.com">Email</a>
                     <a href="data/cv-X.pdf">CV</a>
                     <a href="https://scholar.google.com/citations?user=WDjOXbIAAAAJ&hl=zh-CN">Google Scholar</a>
                 </div>
             </div>
-            <div class="col-3">
-                <img src="data/pic.jpg" class="avatar img-fluid rounded-circle">
+            <div class="col-lg-3 portrait-column">
+                <div class="portrait-frame">
+                    <img src="data/pic.jpg" class="avatar img-fluid" alt="Portrait of Zhu Liu">
+                </div>
+                <p class="portrait-caption">Dalian University of Technology</p>
             </div>
         </div>
         <div class="row justify-content-center" id="news">
             <div class="col-12">
-                <p class="section-name" style="margin-bottom: 3pt; ">News</p>
+                <div class="section-heading">
+                    <p class="section-index">01</p>
+                    <h2 class="section-name">News</h2>
+                    <p class="section-note">Selected updates</p>
+                </div>
                 <div class="exp-list">
                     <ul>
-                        <li>&#x2022;&nbsp (05/2026) One paper on point-supervised infrared small target detection was accepted by ICML 2026 as a Spotlight paper (Top 2.2%).</li>
-                        <li>&#x2022;&nbsp (05/2026) One paper on point-supervised infrared small target detection was accepted by IJCAI 2026.</li>
-                        <li>&#x2022;&nbsp (03/2026) Two papers  were accepted by CVPR 2026.</li>
-                        <li>&#x2022;&nbsp (01/2026) One paper on misaligned multi-modality image fusion was accepted by AAAI 2026.</li>
-                        <li>&#x2022;&nbsp (11/2025) One paper on egocentric visual query localization was accepted by AAAI 2026.</li>
-                        <li>&#x2022;&nbsp (10/2025) One paper on infrared vision was accepted by NeurIPS 2025.</li>
-                        <li>&#x2022;&nbsp (09/2025) One paper on bilevel optimization for adversarial learning was accepted by NeurIPS 2025.</li>
-                        <li>&#x2022;&nbsp (02/2025) One paper on infrared imaging was accepted by CVPR 2025.</li>
-                        <li>&#x2022;&nbsp (12/2024) I was awarded the 2024 CSIG Outstanding Master's Thesis Incentive Program (Top Ten Recipients).</li>
-                        <!--<li>&#x2022;&nbsp (12/2024) I was supported by the Basic Research Fund for Young Students of NSFC.</li>-->
-                        <li>&#x2022;&nbsp (08/2024) One paper on multi-modality image fusion was accepted by IJCAI 2024.</li>
-                        <li>&#x2022;&nbsp (05/2024) One paper on bi-level optimization was accepted by ICML 2024.</li>
-                        <li>&#x2022;&nbsp (03/2024) One paper on multi-modality image fusion was accepted by IEEE TPAMI 2024.</li>
+                        <li><span class="news-date">2026</span><span>Our optimization-driven homography estimation work was accepted by IEEE TPAMI.</span></li>
+                        <li><span class="news-date">05/2026</span><span>One paper on point-supervised infrared small target detection was accepted by ICML 2026 as a Spotlight paper (Top 2.2%).</span></li>
+                        <li><span class="news-date">05/2026</span><span>One paper on point-supervised infrared small target detection was accepted by IJCAI 2026.</span></li>
+                        <li><span class="news-date">03/2026</span><span>Two papers  were accepted by CVPR 2026.</span></li>
+                        <li><span class="news-date">01/2026</span><span>One paper on misaligned multi-modality image fusion was accepted by AAAI 2026.</span></li>
+                        <li><span class="news-date">11/2025</span><span>One paper on egocentric visual query localization was accepted by AAAI 2026.</span></li>
+                        <li><span class="news-date">10/2025</span><span>One paper on infrared vision was accepted by NeurIPS 2025.</span></li>
+                        <li><span class="news-date">09/2025</span><span>One paper on bilevel optimization for adversarial learning was accepted by NeurIPS 2025.</span></li>
+                        <li><span class="news-date">02/2025</span><span>One paper on infrared imaging was accepted by CVPR 2025.</span></li>
+                        <li><span class="news-date">12/2024</span><span>I was awarded the 2024 CSIG Outstanding Master's Thesis Incentive Program (Top Ten Recipients).</span></li>
+                        <!--<li><span class="news-date">12/2024</span><span>I was supported by the Basic Research Fund for Young Students of NSFC.</span></li>-->
+                        <li><span class="news-date">08/2024</span><span>One paper on multi-modality image fusion was accepted by IJCAI 2024.</span></li>
+                        <li><span class="news-date">05/2024</span><span>One paper on bi-level optimization was accepted by ICML 2024.</span></li>
+                        <li><span class="news-date">03/2024</span><span>One paper on multi-modality image fusion was accepted by IEEE TPAMI 2024.</span></li>
                     </ul>
                 </div>
             </div>
@@ -108,8 +109,11 @@
         <div class="row justify-content-center" id="publications">
 
             <div class="col-12">
-                <p class="section-name" style="margin-bottom: 3pt; ">Selected Publications</p>
-                <p style="margin-bottom: 3pt;">* denotes equal contribution</p>
+                <div class="section-heading">
+                    <p class="section-index">02</p>
+                    <h2 class="section-name">Selected Publications</h2>
+                    <p class="section-note">* Equal contribution</p>
+                </div>
 
 
                 <!--
@@ -128,10 +132,24 @@
                     </div> </div>
                 -->
 
+                <article class="row justify-content-center pub-item featured-publication">
+                    <div class="col-md-4 paper-thumbnail">
+                        <img src="data/paper_thumbnail/homography-adverse-degradations.webp"
+                            alt="Framework and results for robust homography estimation under adverse degradations"
+                            class="publication-image" loading="lazy" decoding="async">
+                    </div>
+                    <div class="col-md-8 paper-info">
+                        <p class="publication-kicker">Featured / IEEE TPAMI</p>
+                        <h3 class="paper-title"><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=zh-CN&amp;user=WDjOXbIAAAAJ&amp;sortby=pubdate&amp;citation_for_view=WDjOXbIAAAAJ:qUcmZB5y_30C">Toward Reliable Homography Estimation under Adverse Degradations: An Optimization-Driven Approach</a></h3>
+                        <p class="paper-authors">Risheng Liu, Jiahao Zhang, Zengxi Zhang, <u>Zhu Liu</u></p>
+                        <p class="paper-meta"><em>IEEE Transactions on Pattern Analysis and Machine Intelligence</em></p>
+                        <p class="paper-links"><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=zh-CN&amp;user=WDjOXbIAAAAJ&amp;sortby=pubdate&amp;citation_for_view=WDjOXbIAAAAJ:qUcmZB5y_30C">Paper</a><span class="paper-badge">Q1A*+</span></p>
+                    </div>
+                </article>
+
                 <div class="row justify-content-center pub-item">
                     <div class="col-md-4 paper-thumbnail">
-                        <img src="data/paper_thumbnail/default.jpg" alt="boot" class="img-fluid mx-auto rounded"
-                            style="max-height: 50px; display: block;">
+                        <img src="data/paper_thumbnail/diffuse-to-detect.webp" alt="Overview of point-supervised infrared small target detection with pseudo-label diffusion" class="publication-image" loading="lazy" decoding="async">
                     </div>
                     <div class="col-md-8 paper-info">
                         <!-- Paper Title -->
@@ -142,8 +160,7 @@
                 </div>
                 <div class="row justify-content-center pub-item">
                     <div class="col-md-4 paper-thumbnail">
-                        <img src="data/paper_thumbnail/default.jpg" alt="boot" class="img-fluid mx-auto rounded"
-                            style="max-height: 50px; display: block;">
+                        <img src="data/paper_thumbnail/semantic-priors-irstd.webp" alt="Qualitative infrared small target predictions and semantic feature analysis" class="publication-image" loading="lazy" decoding="async">
                     </div>
                     <div class="col-md-8 paper-info">
                         <!-- Paper Title -->
@@ -154,8 +171,7 @@
                 </div>
                     <div class="row justify-content-center pub-item">
                      <div class="col-md-4 paper-thumbnail">
-            <img src="data/paper_thumbnail/default.jpg" alt="boot" class="img-fluid mx-auto rounded"
-                style="max-height: 50px; display: block;">
+            <img src="data/paper_thumbnail/hidra.webp" alt="Infrared enhancement results across hierarchical degradation scenarios" class="publication-image" loading="lazy" decoding="async">
         </div>
         <div class="col-md-8 paper-info">
             <!-- Paper Title -->
@@ -166,8 +182,7 @@
              </div>
                 <div class="row justify-content-center pub-item">
                     <div class="col-md-4 paper-thumbnail">
-                        <img src="data/paper_thumbnail/default.jpg" alt="boot" class="img-fluid mx-auto rounded"
-                            style="max-height: 50px; display: block;">
+                        <img src="data/paper_thumbnail/hybrid-space-fusion.webp" alt="Dual-space architecture for misaligned multi-modality image fusion" class="publication-image" loading="lazy" decoding="async">
                     </div>
                     <div class="col-md-8 paper-info">
                         <!-- Paper Title -->
@@ -179,8 +194,7 @@
                 </div>
                 <div class="row justify-content-center pub-item">
                     <div class="col-md-4 paper-thumbnail">
-                        <img src="data/paper_thumbnail/default.jpg" alt="boot" class="img-fluid mx-auto rounded"
-                            style="max-height: 50px; display: block;">
+                        <img src="data/paper_thumbnail/eagle-vql.webp" alt="EAGLE appearance and geometry-aware visual query localization framework" class="publication-image" loading="lazy" decoding="async">
                     </div>
                     <div class="col-md-8 paper-info">
                         <!-- Paper Title -->
@@ -192,8 +206,7 @@
                 </div>
                 <div class="row justify-content-center pub-item">
                     <div class="col-md-4 paper-thumbnail">
-                        <img src="data/paper_thumbnail/default.jpg" alt="boot" class="img-fluid mx-auto rounded"
-                            style="max-height: 50px; display: block;">
+                        <img src="data/paper_thumbnail/progressive-prompt-infrared.webp" alt="Progressive prompt fusion framework for infrared vision enhancement" class="publication-image" loading="lazy" decoding="async">
                     </div>
                     <div class="col-md-8 paper-info">
                         <!-- Paper Title -->
@@ -206,8 +219,7 @@
                 </div>
                 <div class="row justify-content-center pub-item">
                     <div class="col-md-4 paper-thumbnail">
-                        <img src="data/paper_thumbnail/default.jpg" alt="boot" class="img-fluid mx-auto rounded"
-                            style="max-height: 50px; display: block;">
+                        <img src="data/paper_thumbnail/bilevel-adversarial-learning.webp" alt="Optimization curves for bilevel adversarial learning" class="publication-image" loading="lazy" decoding="async">
                     </div>
                     <div class="col-md-8 paper-info">
                         <!-- Paper Title -->
@@ -219,8 +231,7 @@
                 </div>
                 <div class="row justify-content-center pub-item">
                     <div class="col-md-4 paper-thumbnail">
-                        <img src="data/paper_thumbnail/default.jpg" alt="boot" class="img-fluid mx-auto rounded"
-                            style="max-height: 50px; display: block;">
+                        <img src="data/paper_thumbnail/caf-image-fusion.webp" alt="Automatic search space for multi-modality image fusion objectives" class="publication-image" loading="lazy" decoding="async">
                     </div>
                     <div class="col-md-8 paper-info">
                         <!-- Paper Title -->
@@ -233,8 +244,7 @@
                 </div>
                   <div class="row justify-content-center pub-item">
                     <div class="col-md-4 paper-thumbnail">
-                        <img src="data/paper_thumbnail/default.jpg" alt="boot" class="img-fluid mx-auto rounded"
-                            style="max-height: 150px; display: block;">
+                        <img src="data/paper_thumbnail/deal-infrared-imaging.webp" alt="Data-efficient adversarial learning framework for infrared imaging" class="publication-image" loading="lazy" decoding="async">
                     </div>
                     <div class="col-md-8 paper-info">
                         <!-- Paper Title -->
@@ -248,8 +258,7 @@
                 </div>
                 <div class="row justify-content-center pub-item">
                     <div class="col-md-4 paper-thumbnail">
-                        <img src="data/paper_thumbnail/default.jpg" alt="boot" class="img-fluid mx-auto rounded"
-                            style="max-height: 50px; display: block;">
+                        <img src="data/paper_thumbnail/ivif-data-task.webp" alt="Overview of infrared-visible image fusion research and applications" class="publication-image" loading="lazy" decoding="async">
                     </div>
                     <div class="col-md-8 paper-info">
                         <!-- Paper Title -->
@@ -263,8 +272,7 @@
                 </div>
                 <div class="row justify-content-center pub-item">
                     <div class="col-md-4 paper-thumbnail">
-                        <img src="data/paper_thumbnail/default.jpg" alt="boot" class="img-fluid mx-auto rounded"
-                            style="max-height: 50px; display: block;">
+                        <img src="data/paper_thumbnail/meha-bilevel-optimization.webp" alt="Convergence comparison for nonconvex bilevel optimization methods" class="publication-image" loading="lazy" decoding="async">
                     </div>
                     <div class="col-md-8 paper-info">
                         <!-- Paper Title -->
@@ -278,8 +286,7 @@
                 </div>
                 <div class="row justify-content-center pub-item">
                     <div class="col-md-4 paper-thumbnail">
-                        <img src="data/paper_thumbnail/default.jpg" alt="boot" class="img-fluid mx-auto rounded"
-                            style="max-height: 50px; display: block;">
+                        <img src="data/paper_thumbnail/timfusion.webp" alt="Task-guided meta-initialized architecture for image fusion" class="publication-image" loading="lazy" decoding="async">
                     </div>
                     <div class="col-md-8 paper-info">
                         <!-- Paper Title -->
@@ -292,8 +299,7 @@
                 </div>
                 <div class="row justify-content-center pub-item">
                     <div class="col-md-4 paper-thumbnail">
-                        <img src="data/paper_thumbnail/default.jpg" alt="boot" class="img-fluid mx-auto rounded"
-                            style="max-height: 50px; display: block;">
+                        <img src="data/paper_thumbnail/crmef.webp" alt="Multi-exposure image fusion comparisons and architecture search" class="publication-image" loading="lazy" decoding="async">
                     </div>
                     <div class="col-md-8 paper-info">
                         <!-- Paper Title -->
@@ -306,8 +312,7 @@
                 </div>
                  <div class="row justify-content-center pub-item">
                     <div class="col-md-4 paper-thumbnail">
-                        <img src="data/paper_thumbnail/default.jpg" alt="boot" class="img-fluid mx-auto rounded"
-                            style="max-height: 50px; display: block;">
+                        <img src="data/paper_thumbnail/balistd.webp" alt="Bi-level adversarial robustness framework for infrared small target detection" class="publication-image" loading="lazy" decoding="async">
                     </div>
                     <div class="col-md-8 paper-info">
                         <!-- Paper Title -->
@@ -320,8 +325,7 @@
                 </div>
                 <div class="row justify-content-center pub-item">
                     <div class="col-md-4 paper-thumbnail">
-                        <img src="data/paper_thumbnail/default.jpg" alt="boot" class="img-fluid mx-auto rounded"
-                            style="max-height: 50px; display: block;">
+                        <img src="data/paper_thumbnail/optimization-learning.webp" alt="Optimization-inspired low-level vision architecture and results" class="publication-image" loading="lazy" decoding="async">
                     </div>
                     <div class="col-md-8 paper-info">
                         <!-- Paper Title -->
@@ -334,8 +338,7 @@
                 </div>
                 <div class="row justify-content-center pub-item">
                     <div class="col-md-4 paper-thumbnail">
-                        <img src="data/paper_thumbnail/default.jpg" alt="boot" class="img-fluid mx-auto rounded"
-                            style="max-height: 50px; display: block;">
+                        <img src="data/paper_thumbnail/paif.webp" alt="Perception-aware infrared-visible fusion under adversarial attacks" class="publication-image" loading="lazy" decoding="async">
                     </div>
                     <div class="col-md-8 paper-info">
                         <!-- Paper Title -->
@@ -348,8 +351,7 @@
                 </div>
                 <div class="row justify-content-center pub-item">
                     <div class="col-md-4 paper-thumbnail">
-                        <img src="data/paper_thumbnail/default.jpg" alt="boot" class="img-fluid mx-auto rounded"
-                            style="max-height: 50px; display: block;">
+                        <img src="data/paper_thumbnail/segmif.webp" alt="Interactive image fusion and semantic segmentation framework" class="publication-image" loading="lazy" decoding="async">
                     </div>
                     <div class="col-md-8 paper-info">
                         <!-- Paper Title -->
@@ -362,8 +364,7 @@
                 </div>
                 <div class="row justify-content-center pub-item">
                     <div class="col-md-4 paper-thumbnail">
-                        <img src="data/paper_thumbnail/default.jpg" alt="boot" class="img-fluid mx-auto rounded"
-                            style="max-height: 50px; display: block;">
+                        <img src="data/paper_thumbnail/bdlfusion.webp" alt="Bi-level dynamic learning framework for multi-modality image fusion" class="publication-image" loading="lazy" decoding="async">
                     </div>
                     <div class="col-md-8 paper-info">
                         <!-- Paper Title -->
@@ -376,8 +377,7 @@
                 </div>
                 <div class="row justify-content-center pub-item">
                     <div class="col-md-4 paper-thumbnail">
-                        <img src="data/paper_thumbnail/default.jpg" alt="boot" class="img-fluid mx-auto rounded"
-                            style="max-height: 50px; display: block;">
+                        <img src="data/paper_thumbnail/hierarchical-fusion-search.webp" alt="Fast hierarchical fusion architecture qualitative result" class="publication-image" loading="lazy" decoding="async">
                     </div>
                     <div class="col-md-8 paper-info">
                         <!-- Paper Title -->
@@ -390,8 +390,7 @@
                 </div>
                 <div class="row justify-content-center pub-item">
                     <div class="col-md-4 paper-thumbnail">
-                        <img src="data/paper_thumbnail/default.jpg" alt="boot" class="img-fluid mx-auto rounded"
-                            style="max-height: 50px; display: block;">
+                        <img src="data/paper_thumbnail/video-deraining.webp" alt="Video deraining comparison with recovered scene details" class="publication-image" loading="lazy" decoding="async">
                     </div>
                     <div class="col-md-8 paper-info">
                         <!-- Paper Title -->

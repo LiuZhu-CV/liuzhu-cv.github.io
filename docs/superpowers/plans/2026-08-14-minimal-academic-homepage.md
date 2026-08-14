@@ -2,7 +2,7 @@
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Deliver a restrained black-and-white academic homepage with fourth-year Ph.D. status, the new TPAMI homography paper, and a real paper-specific thumbnail for every active publication.
+**Goal:** Deliver a modern editorial academic homepage with fourth-year Ph.D. status, the new TPAMI homography paper, and a real paper-specific thumbnail for every active publication.
 
 **Architecture:** Keep the existing static GitHub Pages structure. `index.html` remains the content source, `style.css` owns the monochrome responsive presentation, and optimized local WebP files under `data/paper_thumbnail/` provide stable publication artwork without remote hot-linking. A standard-library Python test validates content, asset paths, accessibility basics, and removal of the generic placeholder.
 
@@ -11,7 +11,7 @@
 ## Global Constraints
 
 - Preserve static HTML/CSS/Bootstrap; add no framework, CMS, build system, or JavaScript-heavy interaction.
-- Use a white, near-black, and neutral-gray palette with thin rules and understated transitions.
+- Use a warm ivory, deep navy, muted teal, and restrained amber palette with thin rules and understated transitions.
 - Store every publication thumbnail locally; do not hot-link remote images.
 - Prefer matching visuals from `https://rsliu.tech/Publication.html`, then authoritative paper/project teasers, then restrained topic-specific scientific artwork.
 - Do not fabricate results, dates, links, metrics, logos, or quantitative claims.
@@ -185,7 +185,7 @@ git add index.html
 git commit -m "feat: add TPAMI paper and publication artwork"
 ```
 
-### Task 4: Implement the Monochrome Academic Design
+### Task 4: Implement the Modern Editorial Academic Design
 
 **Files:**
 - Modify: `style.css`
@@ -197,11 +197,11 @@ git commit -m "feat: add TPAMI paper and publication artwork"
 
 - [ ] **Step 1: Define design tokens**
 
-Add `--ink: #171717`, `--muted: #666`, `--line: #dedede`, `--soft: #f7f7f7`, `--paper: #fff`, `--max-width: 1040px`, and `--transition: 160ms ease`.
+Define deep navy, warm ivory, muted teal, amber accent, neutral line, paper surface, maximum-width, transition, and restrained shadow tokens.
 
 - [ ] **Step 2: Restyle shell and navigation**
 
-Use a white background, readable Source Sans Pro/system stack, translucent white sticky header, 1 px lower border, safe `z-index`, centered maximum width, and `scroll-margin-top` for anchored sections.
+Use a warm ivory background, readable DM Sans/Libre Franklin stack, translucent sticky header, 1 px lower border, safe `z-index`, centered maximum width, and `scroll-margin-top` for anchored sections.
 
 - [ ] **Step 3: Refine biography and sections**
 

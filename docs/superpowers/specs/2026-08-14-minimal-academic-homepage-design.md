@@ -2,7 +2,7 @@
 
 ## Goal
 
-Refresh Zhu Liu's personal academic homepage with a restrained black-and-white visual system, add the new TPAMI homography paper, update the biography to fourth-year Ph.D. status, and replace every generic white publication placeholder with a paper-specific thumbnail.
+Refresh Zhu Liu's personal academic homepage with a modern editorial academic visual system, add the new TPAMI homography paper, update the biography to fourth-year Ph.D. status, and replace every generic white publication placeholder with a paper-specific thumbnail.
 
 ## Scope
 
@@ -22,13 +22,13 @@ The implementation will retain the existing static HTML, CSS, Bootstrap, and Git
 
 ## Visual Direction
 
-The page will use a minimal monochrome academic style:
+After visual review, the approved implementation uses a richer modern editorial academic style:
 
-- White background, near-black headings, and neutral gray secondary text.
-- Thin rules and subtle borders instead of colored panels or heavy shadows.
+- Warm ivory background, deep navy headings, muted teal links, and a restrained amber accent.
+- Thin rules, softly elevated publication cards, and warm gradient details instead of large gray fields.
 - A compact centered content column with more consistent vertical rhythm.
 - Clear typography hierarchy across identity, section headings, paper titles, authors, venues, and links.
-- Understated monochrome link treatment with visible hover and keyboard-focus states.
+- Understated teal/navy link treatment with amber hover and visible keyboard-focus states.
 - A fixed or sticky navigation treatment that remains lightweight and does not obscure anchored sections.
 - Motion limited to short thumbnail and link transitions, with reduced-motion support.
 
@@ -37,7 +37,7 @@ The page will use a minimal monochrome academic style:
 Each publication remains a horizontal row on desktop and becomes a stacked card on narrow screens.
 
 - Thumbnails use one consistent aspect ratio and crop behavior.
-- Images appear slightly desaturated in the default state and return toward full color on hover or focus.
+- Images retain their scientific color information and gain only a subtle contrast/saturation lift on hover or focus.
 - The paper title is the strongest textual element.
 - Authors and venue remain compact and legible.
 - Venue and distinction labels use small outlined monochrome badges; the new paper receives `IEEE TPAMI` and `Q1A*+` labels.

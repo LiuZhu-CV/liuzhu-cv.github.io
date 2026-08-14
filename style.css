@@ -449,6 +449,20 @@ a:focus-visible {
   line-height: 1.55;
 }
 
+.paper-authors sup {
+  margin-left: 1px;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.paper-info .corresponding-note {
+  margin-top: 2px;
+  color: var(--accent);
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
 .paper-info .paper-title {
   margin: 0;
   font-family: "Libre Franklin", sans-serif;

@@ -63,6 +63,11 @@ class HomepageTests(unittest.TestCase):
             with self.subTest(value=value):
                 self.assertIn(value, self.active_html)
 
+    def test_homography_paper_marks_co_corresponding_authors(self):
+        self.assertIn("Risheng Liu<sup>†</sup>", self.active_html)
+        self.assertIn("<u>Zhu Liu</u><sup>†</sup>", self.active_html)
+        self.assertIn("† Co-corresponding authors", self.active_html)
+
     def test_each_active_publication_has_a_unique_local_thumbnail(self):
         sources = [src for src, _ in self.parser.images]
         self.assertEqual(21, len(sources))

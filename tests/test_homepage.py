@@ -115,6 +115,17 @@ class HomepageTests(unittest.TestCase):
         self.assertIn(":focus-visible", self.css)
         self.assertIn("prefers-reduced-motion", self.css)
 
+    def test_academic_service_roles_are_complete(self):
+        required = (
+            "Program Committee:",
+            "ICML, CVPR, ICCV, NeurIPS, IJCAI, AAAI, ACM MM",
+            "Reviewer:",
+            "IEEE TIP, IEEE TCSVT, IEEE TMM, IEEE TIM, Information Fusion",
+        )
+        for value in required:
+            with self.subTest(value=value):
+                self.assertIn(value, self.active_html)
+
 
 if __name__ == "__main__":
     unittest.main()

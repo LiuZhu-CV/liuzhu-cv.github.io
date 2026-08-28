@@ -79,7 +79,8 @@ class HomepageTests(unittest.TestCase):
             "ACM International Conference on Multimedia",
             "https://doi.org/10.1145/3767308.3834923",
             "https://github.com/bzHunter/DECO",
-            "One paper on thermal infrared image super-resolution was accepted by ACM MM 2026.",
+            "One paper on thermal infrared image super-resolution was accepted by ACM MM 2026 as an Oral paper.",
+            "<strong>(Oral)</strong>",
             "data/paper_thumbnail/deco-thermal-ir.webp",
         )
         for value in required:

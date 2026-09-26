@@ -1,17 +1,17 @@
 :root {
-  --ink: #172033;
-  --navy: #14213d;
-  --navy-soft: #223253;
-  --accent: #c77933;
-  --accent-soft: #f3e3d2;
-  --teal: #2f6f6d;
+  --ink: #293442;
+  --navy: #173f78;
+  --navy-soft: #345174;
+  --accent: #3f6fa8;
+  --accent-soft: #e9f0f8;
+  --teal: #356b8c;
   --paper: #ffffff;
-  --canvas: #f8f6f1;
-  --surface: #f1eee7;
-  --muted: #697184;
-  --line: #dcd8cf;
+  --canvas: #eef2f6;
+  --surface: #f6f8fb;
+  --muted: #667386;
+  --line: #dce3eb;
   --max-width: 1120px;
-  --shadow: 0 16px 42px rgba(20, 33, 61, 0.08);
+  --shadow: 0 16px 40px rgba(31, 54, 83, 0.09);
   --transition: 180ms ease;
 }
 
@@ -25,9 +25,7 @@ html {
 
 body {
   margin: 0;
-  background:
-    radial-gradient(circle at 92% 8%, rgba(199, 121, 51, 0.09), transparent 24rem),
-    var(--canvas);
+  background: var(--canvas);
   color: var(--ink);
   font-family: "DM Sans", "Segoe UI", Arial, sans-serif;
   font-size: 16px;
@@ -48,7 +46,7 @@ a:hover {
 }
 
 a:focus-visible {
-  outline: 3px solid rgba(199, 121, 51, 0.45);
+  outline: 3px solid rgba(63, 111, 168, 0.36);
   outline-offset: 4px;
   border-radius: 3px;
 }
@@ -58,21 +56,25 @@ a:focus-visible {
   top: 0;
   z-index: 1000;
   width: 100%;
-  background: rgba(248, 246, 241, 0.9);
-  border-bottom: 1px solid rgba(20, 33, 61, 0.12);
+  padding: 14px 24px 0;
+  background: linear-gradient(180deg, rgba(238, 242, 246, 0.96), rgba(238, 242, 246, 0.78) 74%, transparent);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
 }
 
 .site-nav {
   max-width: var(--max-width);
-  min-height: 72px;
+  min-height: 62px;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 22px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 28px;
+  border: 1px solid rgba(220, 227, 235, 0.94);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 8px 28px rgba(31, 54, 83, 0.08);
 }
 
 .brand {
@@ -91,7 +93,7 @@ a:focus-visible {
   height: 34px;
   display: grid;
   place-items: center;
-  border-radius: 10px;
+  border-radius: 50%;
   background: var(--navy);
   color: #fff;
   font-size: 0.78rem;
@@ -131,7 +133,7 @@ a:focus-visible {
 .container {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 0 24px 70px;
+  padding: 24px 24px 70px;
 }
 
 #home,
@@ -147,17 +149,22 @@ a:focus-visible {
   position: relative;
   align-items: center;
   margin: 0;
-  padding: clamp(58px, 8vw, 102px) clamp(8px, 3vw, 34px) clamp(50px, 7vw, 82px);
+  padding: clamp(44px, 6vw, 72px) clamp(28px, 5vw, 62px);
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: var(--paper);
+  box-shadow: 0 12px 34px rgba(31, 54, 83, 0.07);
 }
 
 .intro::after {
   content: "";
   position: absolute;
-  left: 0;
-  right: 0;
+  left: clamp(28px, 5vw, 62px);
+  right: clamp(28px, 5vw, 62px);
   bottom: 0;
   height: 1px;
-  background: linear-gradient(90deg, var(--accent), var(--line) 32%, transparent 95%);
+  background: linear-gradient(90deg, var(--accent), var(--line) 36%, transparent 92%);
 }
 
 .intro-copy {
@@ -185,7 +192,7 @@ a:focus-visible {
 
 .chinese-name {
   margin-left: 12px;
-  color: var(--accent);
+  color: var(--navy-soft);
   font-weight: 400;
   letter-spacing: 0;
 }
@@ -193,7 +200,7 @@ a:focus-visible {
 .intro p {
   max-width: 780px;
   margin-bottom: 15px;
-  color: #4f596c;
+  color: #536174;
 }
 
 .intro .intro-lead {
@@ -214,7 +221,7 @@ a:focus-visible {
   align-items: center;
   min-height: 42px;
   padding: 8px 15px;
-  border: 1px solid rgba(20, 33, 61, 0.2);
+  border: 1px solid var(--line);
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.76);
   color: var(--navy);
@@ -226,7 +233,7 @@ a:focus-visible {
 .profile-links a:hover {
   border-color: var(--accent);
   background: var(--accent-soft);
-  color: #8b4c17;
+  color: var(--navy);
   transform: translateY(-2px);
 }
 
@@ -242,9 +249,9 @@ a:focus-visible {
   width: min(230px, 100%);
   aspect-ratio: 1;
   padding: 8px;
-  border: 1px solid rgba(20, 33, 61, 0.18);
+  border: 1px solid #cfd9e5;
   border-radius: 34% 66% 58% 42% / 46% 38% 62% 54%;
-  background: linear-gradient(145deg, #fff, #eee8dd);
+  background: linear-gradient(145deg, #ffffff, #e7edf4);
   box-shadow: var(--shadow);
 }
 
@@ -257,7 +264,7 @@ a:focus-visible {
   bottom: 18px;
   border-radius: 50%;
   background: var(--accent);
-  box-shadow: 0 0 0 9px var(--canvas);
+  box-shadow: 0 0 0 9px var(--paper);
 }
 
 .avatar {
@@ -281,8 +288,12 @@ a:focus-visible {
 #services,
 #awards,
 #ta {
-  margin: 0;
-  padding-top: clamp(50px, 7vw, 82px);
+  margin: 24px 0 0;
+  padding: clamp(28px, 4vw, 44px) clamp(24px, 4vw, 42px);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: var(--paper);
+  box-shadow: 0 8px 26px rgba(31, 54, 83, 0.05);
 }
 
 .section-heading {
@@ -332,7 +343,7 @@ a:focus-visible {
   position: relative;
   margin: 0;
   padding: 10px 10px 10px 24px;
-  color: #4f596c;
+  color: #536174;
   list-style: none;
 }
 
@@ -350,7 +361,8 @@ a:focus-visible {
 #news .exp-list {
   padding: 12px 20px;
   border-left: 3px solid var(--accent);
-  background: linear-gradient(90deg, rgba(243, 227, 210, 0.72), transparent 72%);
+  border-radius: 0 12px 12px 0;
+  background: linear-gradient(90deg, var(--accent-soft), var(--surface) 72%);
 }
 
 #news .news-date {
@@ -366,10 +378,10 @@ a:focus-visible {
   margin: 0 0 20px;
   padding: 18px;
   overflow: hidden;
-  border: 1px solid rgba(20, 33, 61, 0.12);
-  border-radius: 18px;
-  background: rgba(255, 255, 255, 0.82);
-  box-shadow: 0 8px 24px rgba(20, 33, 61, 0.045);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #fbfcfe;
+  box-shadow: none;
   transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
 }
 
@@ -387,9 +399,9 @@ a:focus-visible {
 
 .pub-item:hover,
 .pub-item:focus-within {
-  transform: translateY(-3px);
-  border-color: rgba(199, 121, 51, 0.42);
-  box-shadow: var(--shadow);
+  transform: translateY(-1px);
+  border-color: rgba(63, 111, 168, 0.52);
+  box-shadow: 0 12px 30px rgba(31, 54, 83, 0.09);
 }
 
 .pub-item:hover::before,
@@ -398,9 +410,9 @@ a:focus-visible {
 }
 
 .featured-publication {
-  border-color: rgba(199, 121, 51, 0.4);
+  border-color: rgba(63, 111, 168, 0.45);
   background:
-    linear-gradient(120deg, rgba(243, 227, 210, 0.55), rgba(255, 255, 255, 0.92) 48%),
+    linear-gradient(120deg, rgba(233, 240, 248, 0.9), rgba(255, 255, 255, 0.96) 55%),
     var(--paper);
 }
 
@@ -418,7 +430,7 @@ a:focus-visible {
   width: 100%;
   aspect-ratio: 16 / 9;
   display: block;
-  border: 1px solid rgba(20, 33, 61, 0.1);
+  border: 1px solid var(--line);
   border-radius: 12px;
   background: var(--surface);
   object-fit: cover;
@@ -485,7 +497,7 @@ a:focus-visible {
 }
 
 .paper-info em {
-  color: #4b5569;
+  color: #536174;
 }
 
 .paper-info a {
@@ -520,10 +532,10 @@ a:focus-visible {
   align-items: center;
   min-height: 28px;
   padding: 3px 9px;
-  border: 1px solid rgba(199, 121, 51, 0.55);
+  border: 1px solid rgba(63, 111, 168, 0.45);
   border-radius: 999px;
   background: var(--accent-soft);
-  color: #8c4d17;
+  color: var(--navy);
   font-size: 0.7rem;
   font-style: normal;
   font-weight: 700;
@@ -542,9 +554,9 @@ a:focus-visible {
 #awards .exp-list,
 #ta .exp-list {
   padding: 22px 26px;
-  border: 1px solid rgba(20, 33, 61, 0.1);
+  border: 1px solid var(--line);
   border-radius: 16px;
-  background: rgba(255, 255, 255, 0.68);
+  background: var(--surface);
 }
 
 footer {
@@ -597,10 +609,14 @@ footer p {
 }
 
 @media (max-width: 767px) {
+  .header {
+    padding: 10px 12px 0;
+  }
+
   .site-nav {
     min-height: auto;
-    padding-top: 14px;
-    padding-bottom: 14px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     align-items: flex-start;
   }
 
@@ -611,7 +627,7 @@ footer p {
   }
 
   .intro {
-    padding-top: 46px;
+    padding-top: 38px;
   }
 
   .intro-copy {
@@ -656,6 +672,7 @@ footer p {
 
   .site-nav {
     display: block;
+    border-radius: 20px;
   }
 
   .nav-links {
@@ -670,6 +687,15 @@ footer p {
   .container {
     padding-left: 16px;
     padding-right: 16px;
+  }
+
+  .intro,
+  #news,
+  #publications,
+  #services,
+  #awards,
+  #ta {
+    border-radius: 18px;
   }
 
   .intro h1 {

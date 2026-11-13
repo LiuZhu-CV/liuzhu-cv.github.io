@@ -46,9 +46,9 @@ class HomepageTests(unittest.TestCase):
         cls.parser = PublicationParser()
         cls.parser.feed(cls.active_html)
 
-    def test_biography_identifies_fourth_year(self):
-        self.assertIn("fourth-year Ph.D. student", self.active_html)
-        self.assertNotIn("third-year Ph.D. student", self.active_html)
+    def test_biography_identifies_completed_phd(self):
+        self.assertIn("I received my Ph.D. in Software Engineering", self.active_html)
+        self.assertNotIn("Ph.D. student", self.active_html)
 
     def test_homography_paper_metadata_and_link_are_present(self):
         required = (
@@ -79,7 +79,7 @@ class HomepageTests(unittest.TestCase):
             "ACM International Conference on Multimedia",
             "https://doi.org/10.1145/3767308.3834923",
             "https://github.com/bzHunter/DECO",
-            "One paper on thermal infrared image super-resolution was accepted by ACM MM 2026 as an Oral paper.",
+            "One paper on image super-resolution was accepted by ACM MM 2026 as an Oral paper.",
             "<strong>(Oral)</strong>",
             "data/paper_thumbnail/deco-thermal-ir.webp",
         )

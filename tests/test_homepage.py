@@ -79,8 +79,8 @@ class HomepageTests(unittest.TestCase):
             "ACM International Conference on Multimedia",
             "https://doi.org/10.1145/3767308.3834923",
             "https://github.com/bzHunter/DECO",
-            "One paper on image super-resolution was accepted by ACM MM 2026 as an Oral paper.",
-            "<strong>(Oral)</strong>",
+            "Our image super-resolution paper won the <strong>Best Paper</strong> award at ACM MM 2026 (<strong>Acceptance Rate ≤ 0.25%</strong>).",
+            "<strong>(Best Paper, Acceptance Rate ≤ 0.25%)</strong>",
             "data/paper_thumbnail/deco-thermal-ir.webp",
         )
         for value in required:
